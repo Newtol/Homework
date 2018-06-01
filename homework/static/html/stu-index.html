@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生-首页</title>
+	<link rel="stylesheet" href="../css/page/teacher-course.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+	<style>
+		
+		.cid {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">同学，你好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="fenxi.html">数据分析</a></li>
+			<li><a href="set-information.html?flag=2">个人设置</a></li>
+			<li><a href="announcement.html?flag=2">通知</a></li>
+			<li><a href="stu-index.html">首页</a></li>		
+		</ul>
+	</div>
+</div>
+<div class="content">	
+	<!-- 搜索班级 -->
+	<div class="search-box">
+
+		<div class="search-wraper">
+			<input type="text" placeholder="搜索班级" class="class-code">
+			<button class="search-btn"></button>
+			<button class="close-search" style="display:none;">关闭</button>	
+			<div class="class-detail"></div>	
+		</div>	
+		<script type="text/x-handlebars-template" id="search-class-tpl">
+			<p>班级名称：{{name}}</p>
+			<p>描述：{{description}}</p>
+			<p>创建人：{{creator}}</p>
+			<p>创建时间：{{creatime}}</p>
+			<p><button id="add-class">加入班级</button></p>
+		</script>
+		
+		<div class="myclass-wraper">
+			<button class="myclass-btn" id="myclass-btn">我的班级</button>	
+			<div class="my-class"></div>
+		</div>
+		<script type="text/x-handlebars-template" id="myclass-tpl">
+			<p>
+				<span>班级名</span>
+				<span class="cid">班级ID</span>
+			</p>
+			{{#each this}}	
+				{{#if creator}}			
+					<p>
+						<a href="show-class-apply.html?courseId={{cid}}">{{classname}}
+						<span class="cid">{{cid}}</span></a>
+					</p>
+				{{else}}
+					<p>
+						<a href="stu-class-one.html?workId=0&classId={{cid}}&jid=0&className=0">{{classname}}
+						<span class="cid">{{cid}}</span></a>
+					</p>
+				{{/if}}
+			{{/each}}
+		</script>
+
+		<div class="create-wraper">
+			<button class="create-btn">创建班级</button>	
+			<div class="create-class">
+				<p>班级名称：<input type="text" class="class-name"></p>
+				<p>描述：<textarea class="class-description"></textarea></p>
+				<p><button class="sub-create">创建班级</button></p>
+			</div>
+		</div>		
+		
+	</div>
+	<div class="your-class task-wraper">
+		<h2>您的课程</h2>
+
+		<!-- 课程 -->
+		<div class="class-wraper grid"></div>
+		<script type="text/x-handlebars-template" id="course-tpl">
+			{{#each this}}
+				<figure class="effect-milo course-block">
+					<img src="../img/class.jpg" alt="img3"/>
+					<figcaption>
+						<div>
+							<h2>{{course}}</h2>
+							<p>{{addtion}}</p>
+						</div>	
+						<a href="stu-stu-detail.html?jid={{jid}}&sid={{sid}}">View more</a>
+					</figcaption>			
+				</figure>	
+			{{/each}}
+		</script>
+	</div>
+	<div class="your-work task-wraper">
+		<h2>您的作业</h2>
+
+		<!-- 作业 -->
+		<div class="work-wraper grid">			
+
+		</div>
+		<script type="text/x-handlebars-template" id="work-tpl">
+			{{#each this}}
+				<figure class="effect-bubba work-block">
+					<img src="../img/work.jpg" alt="img4"/>
+					<figcaption>
+						<div>
+							<h2>{{addtion}}</h2>
+							<p>截止日期：{{deadline}}</p>
+							{{#if isFinish}}
+								<p>是否完成：已完成</p>
+							{{else}}
+								<p>是否完成：未完成</p>
+							{{/if}}
+						</div>
+						<a href="stu-dowork.html?courseId={{asid}}&address={{attachement}}">View more</a>	
+					</figcaption>			
+				</figure>
+			{{/each}}
+		</script>
+	</div>
+
+	<div class="stu-cover"></div>
+	
+</div>
+
+<script src='../js/lib/r.js' data-main='../js/page/stu_index'></script>	
+</body>
+</html>

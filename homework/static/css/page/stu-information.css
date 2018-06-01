@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/modules/top.scss */
+.top {
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  background: url("../../img/top_bg.png");
+  background-size: 100% 100%;
+  color: #fff;
+}
+/* line 10, ../../sass/modules/top.scss */
+.top .logo {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+/* line 14, ../../sass/modules/top.scss */
+.top .logo h2 {
+  margin-left: 5%;
+  padding-left: 70px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+/* line 21, ../../sass/modules/top.scss */
+.top .top-nav {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+/* line 25, ../../sass/modules/top.scss */
+.top .top-nav ul {
+  height: 100%;
+  text-align: right;
+}
+/* line 29, ../../sass/modules/top.scss */
+.top .top-nav li {
+  display: inline-block;
+  padding-top: 30px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+/* line 35, ../../sass/modules/top.scss */
+.top .top-nav li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 38, ../../sass/modules/top.scss */
+.top .top-nav li a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* line 5, ../../sass/page/stu-information.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 9, ../../sass/page/stu-information.scss */
+html, body, ul, li, p, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../../sass/page/stu-information.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 16, ../../sass/page/stu-information.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 19, ../../sass/page/stu-information.scss */
+body {
+  font-family: "微软雅黑";
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+
+/* line 25, ../../sass/page/stu-information.scss */
+.content {
+  overflow: hidden;
+  width: 100%;
+  /* 学生资料 */
+}
+/* line 30, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper {
+  overflow: hidden;
+  padding: 20px;
+  margin: 50px auto;
+  width: 40%;
+  border: 1px solid #C8C8C8;
+  background: #fff;
+  -moz-box-shadow: 0, 0, 0, 0.3;
+  -webkit-box-shadow: 0, 0, 0, 0.3;
+  box-shadow: 0, 0, 0, 0.3;
+  -moz-transition: left 0.5s ease-in;
+  -o-transition: left 0.5s ease-in;
+  -webkit-transition: left 0.5s ease-in;
+  transition: left 0.5s ease-in;
+}
+/* line 40, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper h2 {
+  padding: 10px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+/* line 45, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper h2 a {
+  float: right;
+  padding: 5px 10px;
+  background: #EA2000;
+  margin-right: 10px;
+  display: block;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+/* line 56, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper div {
+  text-align: right;
+  padding: 10px;
+  margin-right: 20%;
+}
+/* line 61, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper label {
+  padding: 5px;
+  font-size: 1rem;
+}
+/* line 65, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper input {
+  width: 75%;
+  height: 30px;
+  background: #fff;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 72, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper .sub input {
+  border: 0;
+  color: #fff;
+  font-size: 1.1rem;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 79, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper .save-btn {
+  width: 50%;
+  height: 40px;
+  background: #1ba261;
+}
+/* line 87, ../../sass/page/stu-information.scss */
+.content .stu-info-wraper .cancel-btn {
+  width: 25%;
+  background: #dd4e41;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师-课程</title>
+	<link rel="stylesheet" href="../css/page/teacher-course.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">老师，您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="set-information.html?flag=1">个人设置</a></li>
+			<li><a href="announcement.html?flag=1">通知</a></li>
+			<li><a href="teacher-course.html">首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	<!-- 搜索班级 -->
+	<div class="search-box">
+		<!-- 搜索班级 -->
+		<div class="search-wraper">
+			<input type="text" placeholder="搜索班级加入" class="class-code">
+			<button class="search-btn"></button>
+			<button class="close-search" style="display:none;">关闭</button>		
+			<div class="class-detail"></div>	
+			<script type="text/x-handlebars-template" id="search-class-tpl">
+				<p>班级名称：{{name}}</p>
+				<p>描述：{{description}}</p>
+				<p>创建人：{{creator}}</p>
+				<p>创建时间：{{creatime}}</p>
+				<p><button id="add-class">加入班级</button></p>
+			</script>
+		</div>	
+		<!-- 填写老师所教的课程信息 -->
+		<div class="teacher-info">
+			<p>课程名：<input type="text" class="join-classname"></p>
+			<p>总分：<input type="text" class="join-totlascore"></p>
+			<p>说&nbsp;&nbsp;&nbsp;明：<textarea rows="3" class="join-addition"></textarea></p>
+			<p><button id="sure-add">入驻班级</button></p>
+		</div>
+	</div>
+	<div class="your-class task-wraper">
+		<!-- 班级 -->
+		<h2>您的班级</h2>		
+		<div class="class-wraper grid"></div>
+		<script type="text/x-handlebars-template" id="class-List">				
+			{{#each this}}
+				<figure class="effect-milo course-block">
+					<img src="../img/class.jpg" alt="img1"/>
+					<figcaption>
+						<div>
+							<h2>{{classname}}</h2>
+							<p>课程:{{course}}</p>
+							<p>创建者:{{creator}}</p>
+						</div>
+						<a href="class-one.html?workId=0&classId={{cid}}&jid={{jid}}&className={{classname}}">View more</a>
+					</figcaption>			
+				</figure>
+			{{/each}}				
+		</script>
+
+	</div>
+	<div class="your-work task-wraper">
+		<h2>您的作业</h2>
+
+		<!-- 作业 -->
+		<div class="work-wraper grid"></div>
+		<script type="text/x-handlebars-template" id="work-tpl">
+			{{#each this}}
+				<figure class="effect-bubba work-block">
+					<img src="../img/work.jpg" alt="img13"/>
+					<figcaption>
+						<div>
+							<h2>{{course}}</h2>
+							<p>{{name}}</p>
+							<p>百分比：{{percentage}}</p>
+							<p>过期时间：{{deadline}}</p>
+						</div>
+						<a href="work-class-one.html?workId={{asid}}&classId={{cid}}&jid={{classid}}&className={{course}}">View more</a>
+					</figcaption>			
+				</figure>
+			{{/each}}
+		</script>
+	</div>
+</div>
+
+<script src='../js/lib/r.js' data-main='../js/page/teacher_course'></script>	
+</body>
+</html>

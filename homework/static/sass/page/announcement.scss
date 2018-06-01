@@ -1,0 +1,115 @@
+@import "../modules/top";
+@import "compass/reset";
+@import "compass/css3";
+html, body, ul, li, p, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, li {
+	list-style: none;
+}
+body {
+	font-family: "微软雅黑";	
+	font-size: 62.5%;
+	background: #F2F2F2;
+}
+
+.logo {
+	span {
+		font-size: 1rem;
+	}
+}
+
+.content {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 90%;
+	.announcement-wraper {
+		margin: 10px auto;
+		overflow: hidden;
+		padding: 10px 0;
+		width: 70%;
+		background: #eee;
+		@include border-radius(4px);
+		ul {
+			padding-left: 10%;
+			li {
+				overflow: hidden;
+				width: 80%;
+				margin-top: 10px;
+				padding: 10px;
+				background: #fff;
+				@include border-radius(4px);
+				p {
+					font-size: 1.3rem;
+					padding: 5px 0;
+					span {
+						float: right;
+						font-size: 0.8rem;
+					}
+				}
+			}
+		}
+	}
+
+
+	.tab-wraper {
+		overflow: hidden;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 70%;
+		border: 1px solid #9ABDF4;
+		background: #fff;
+	}
+	.menu {
+		overflow: hidden;
+	}
+	.menu li {
+		float: left;
+		padding: 10px 0;
+		text-align: center;
+		font-size: 1.5rem;
+		color: #fff;
+		width: 50%;		
+		cursor: pointer;
+	}
+	.conBox {
+		padding: 20px;
+		textarea {
+			width: 100%;
+		}
+		button {
+			margin-top: 20px;
+			border: 0;
+			width: 80px;
+			height: 30px;
+			color: #fff;
+			font-size: 1.2rem;
+			background: #9ABDF4;
+			@include border-radius(4px);
+		}
+		li {
+			padding: 15px 10px;
+			font-size: 1.2rem;
+		}
+		#announce-detail {
+			p {
+				text-indent: 2em;
+				font-size: 1.1rem;
+			}
+		}
+	}
+	.selected {
+		background: #9ABDF4;
+	}
+	.noselected {
+		background: #C9DBFA;
+	}
+	.hide {
+		display: none;
+	}
+}

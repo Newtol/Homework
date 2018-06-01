@@ -1,0 +1,189 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "../modules/top";
+
+a {
+	text-decoration: none;
+}
+
+
+body {
+	font-family: "微软雅黑";	
+	background: #f2f2f2;
+	font-size: 62.5%;
+}
+
+.task-wraper {
+	overflow: hidden;
+	padding-left: 2.5%;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.logo {
+	span {
+		font-size: 1rem;
+	}
+}
+
+.content {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	.search-box {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		z-index: 999;
+		overflow: hidden;
+		.search-wraper, .create-wraper {
+			float: right;
+			padding: 3px;
+			background: #fff;
+			@include border-radius(4px);
+			input {
+				width: 200px;
+				outline: none;
+			}
+			input, button {				
+				border: 0;
+				vertical-align: middle;
+			}
+			button {
+				height: 44px;
+				width: 44px;
+				background: url("../../img/icon_search.png") no-repeat;
+			}
+		}
+
+		.class-detail, .create-class {
+			display: none;
+			margin-top: 20px;
+			p {
+				padding: 10px 5px;
+				font-size: 1.1rem;
+				button {
+					margin-left: 10%;
+					width: 80%;
+					height: 40px;
+					color: #fff;
+					font-size: 1rem;
+					background: #59BDCE;
+					@include border-radius(4px);
+				}
+			}
+		}
+		.create-wraper {
+			margin-right: 20px;
+			button {
+				width: 100px;
+				color: #fff;
+				font-size: 1rem;
+				background: #59BDCE;
+				@include border-radius(4px);
+				@include transition(width ease-in-out 0.3s);
+				&.long-width {
+					margin-left: 5%;
+					width: 90%;
+				}
+			}
+			p {
+				input {
+					height: 30px;
+					border: 1px solid #eee;
+				}
+				textarea {
+					margin-top: 15px;
+					margin-left: 5%;
+					height: 80px;
+					width: 90%;
+				}
+			}
+		}
+		
+	}
+	.task-wraper {
+		font-size: 1.5rem;
+	}
+	.course-block, .work-block {
+		overflow: hidden;
+		display: inline-block;
+		margin-right: 50px;
+		margin-top: 25px;
+		height: 200px;
+		width: 200px;
+		border-radius: 4px;	
+		box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+		h2 {
+			font-size: 1.2rem;
+		}
+		p {
+			margin-top: 5px;
+			padding: 5px 10px 5px 5px;
+			text-align: center;
+			font-size: 0.8rem;
+		}
+		
+	}
+
+	/* 学生首页 */
+	.show-situation {
+		position: absolute;
+		z-index: 9999;
+		overflow: hidden;
+		width: 30%;
+		right: 0;
+		
+		&.add-bg {
+			top: 0;
+			background: rgba(255, 255, 255, 1);
+		}
+		span {
+			float: right;
+			display: block;
+			margin: 20px;
+			padding: 10px;
+			font-size: 1.3rem;
+			color: #fff;
+			background: #16A05D;
+			cursor: pointer;
+			@include border-radius(4px);
+    		@include transition(all ease-in-out 0.5s);  
+    		&.hide {
+    			margin: 10px;
+    			font-size: 0.8px;
+    		}
+		}
+		#close-situation {
+			display: none;
+			float: left;
+			padding: 3px;
+			font-size: 0.6rem;
+			text-align: center;
+			vertical-align: center;
+			color: #fff;
+		}
+		.stu-situation {
+			float: left;
+			clear: both;
+			display: none;
+			ul li {
+				padding: 10px;
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.stu-cover {
+		display: none;
+		position: fixed;
+		z-index: 998;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+	}
+
+}
+
+

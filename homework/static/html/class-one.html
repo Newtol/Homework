@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师-班级详情</title>
+	<link rel="stylesheet" href="../css/page/class-one.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">老师，您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="set-information.html?flag=1">个人设置</a></li>
+			<li><a href="announcement.html">通知</a></li>
+			<li><a href="teacher-course.html">首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	
+	<div class="stu-list">
+		<h2>班级：<span id="class-name"></span>
+			<a href="#" class="declare-work">发布作业</a>
+			<a class="send-announce" href="#">发布公告</a>
+		</h2>		
+		
+		
+		<!-- 学生信息 -->
+		<ul class="stu-info-list"></ul>
+		<script type="text/x-handlebars-template" id="stu-list">
+			{{#each this}}
+				<li>
+					<a href="stu-detail.html?jid={{jid}}&sid={{sid}}">
+						<span>{{name}}</span><span>{{gender}}</span><span>{{isadmin}}</span>
+						<span class="stu-detail">{{selfintro}}</span>
+					</a>
+				</li>
+			{{/each}}
+		</script>
+		
+
+		<!-- 发布作业 -->
+		<div class="declare-box hide-declare">
+			<h2>作业发布<span class="declare-close">关闭</span></h2>
+			<form id="declare-form" enctype="multipart/form-data">
+				<div>
+					<label for="">百分比</label>
+					<input type="text" name="percentage" class="persent">
+				</div>
+				<div>
+					<label for="">截止日期</label>
+					<input type="date" name="deadline" class="deadline">
+				</div>			
+				<div>
+					<label for="">说明</label>
+					<input type="text" name="addtion" class="addtion">
+				</div>
+				<div class="enclosure">
+					<label for="">附件上传</label>
+					<input type="file" name="file">
+				</div>
+				<input type="text" name="jid" class="jid" style="display:none;">
+				<div class="sub">
+					<input type="submit" value="发布作业" class="sub-work">
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+	<div class="cover"></div>
+	
+</div>
+
+
+<script src='../js/lib/r.js' data-main='../js/page/class_one'></script>	
+</body>
+</html>

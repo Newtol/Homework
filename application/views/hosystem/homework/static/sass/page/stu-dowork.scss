@@ -1,0 +1,74 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "../modules/top";
+
+html, body, ul, li, p, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+ul, li {
+	list-style: none;
+}
+body {
+	font-family: "微软雅黑";	
+	background: #f2f2f2;
+	font-size: 62.5%;
+}
+
+.logo {
+	span {
+		font-size: 1rem;
+	}
+}
+.content {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 90%;
+	h2 {
+		font-size: 1.5rem;
+		padding: 20px 0;
+	}
+	.detail-wraper {
+		overflow: hidden;
+		padding: 20px;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 60%;
+		border: 1px solid #C8C8C8;
+    	background: #fff;
+		@include border-radius(4px);
+		h3 {
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		p {
+			padding: 15px 20px;
+			margin-bottom: 10px;
+			font-size: 1.2rem;
+			border-bottom: 1px solid #C8C8C8;
+			a {
+				display: inline-block;
+				padding: 5px;
+				background: #FF4600;
+				color: #fff;
+				font-size: 1.1rem;
+				@include border-radius(4px);
+			}
+		}
+		button {
+			margin-right: 5%;
+			width: 40%;
+			height: 40px;
+			border: 0;
+			background: #FF4600;
+			color: #fff;
+			font-size: 1.2rem;
+			@include border-radius(4px);
+		}
+		
+	}
+
+}

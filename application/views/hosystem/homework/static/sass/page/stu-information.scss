@@ -1,0 +1,100 @@
+@import "compass/reset";
+@import "../modules/top";
+@import "compass/css3";
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+html, body, ul, li, p, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul, li {
+  list-style: none;
+}
+body {
+  font-family: "微软雅黑";  
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+
+.content {
+  overflow: hidden;
+  width: 100%;
+
+  /* 学生资料 */
+  .stu-info-wraper {
+    overflow: hidden;
+    padding: 20px;
+    margin: 50px auto;
+    width: 40%; 
+    border: 1px solid #C8C8C8;
+    background: #fff;   
+   // background: rgba(245,170,98, 1);
+    @include box-shadow(0, 0, 0, 0.3);
+    @include transition(left ease-in 0.5s);  
+    h2 {
+      padding: 10px 0;
+      font-size: 2rem;
+      text-align: center;
+      //color: #fff;
+      a {
+        float: right;
+        padding: 5px 10px;
+        background: #EA2000;
+        margin-right: 10px;
+        display: block;
+        font-size: 0.8rem;
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+    div {
+      text-align: right;
+      padding: 10px;
+      margin-right: 20%;
+    }
+    label {
+      padding: 5px;
+      font-size: 1rem;
+    }
+    input {
+      width: 75%;
+      height: 30px;
+      background: #fff;
+      @include transition(all ease-in-out 0.5s);  
+    }
+    .sub {
+      input {
+        border: 0;
+        color: #fff;
+        font-size: 1.1rem;        
+        @include transition(all ease-in-out 0.5s);  
+      }
+    }
+    .save-btn {
+      width: 50%;
+      height: 40px;      
+      background: rgba(27,162,97, 1);
+      // &:hover {
+      //   background: rgba(27,162,97, 1);
+      // }
+    }
+    .cancel-btn {
+      width: 25%;
+      background: rgba(221,78,65 , 1);
+      // &:hover {
+      //   background: rgba(221,78,65 , 1);
+      // }
+    }
+  }
+  
+}
+
+
+
+

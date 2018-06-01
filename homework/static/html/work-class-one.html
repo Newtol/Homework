@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师-作业成员</title>
+	<link rel="stylesheet" href="../css/page/class-one.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">老师，您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="set-information.html?flag=1">个人设置</a></li>		
+			<li><a href="teacher-course.html">首页</a></li>
+			<li><a href="announcement.html">通知</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	
+	<div class="stu-list">
+		<h2>
+			<span id="class-name"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+			作业号：<span class="work-id"></span>
+		</h2>		
+		
+		<!-- 学生信息 -->
+		<ul class="stu-info-list">
+					
+		</ul>
+		<script type="text/x-handlebars-template" id="stu-list">
+			{{#each this}}
+				<li class="work-stu-one">
+					<a href="work-stu-detail.html?workId={{jid}}&stuId={{sid}}">
+						<span>{{name}}<i>{{gender}}</i></span>
+					</a>
+				</li>	
+			{{/each}}
+		</script>
+	</div>
+
+	<div class="cover"></div>
+	
+</div>
+
+
+<script src='../js/lib/r.js' data-main='../js/page/class_one'></script>	
+</body>
+</html>

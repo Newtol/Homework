@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业管理系统-登录</title>
+	<link rel="stylesheet" href="../css/page/login.css">
+</head>
+<body>
+<div class="content">		
+	<h1>HomeWork Manager</h1>
+	<div class="login-box main-login">
+
+		<div class="intro login-inner">
+			<h2>作业&nbsp;&nbsp;是什么?</h2>
+			<p>
+				作业&nbsp;&nbsp;是一款覆盖web端和移动端的作业管理系统，能有效地帮助您更好的完成作业的发布、提交、整理、审阅以及批改。
+			</p>
+			<a href="#" class="sub-btn btn" id="change-sign">去注册</a>
+		</div>
+		<div class="login login-inner">
+			<div class="persent" id="login-identy">
+				<input type="radio" name="loginIdent" value="1"><span>老师</span>
+				<input type="radio" name="loginIdent" value="2"><span>学生</span>
+			</div>
+			<div>
+				<input type="text" name="username" class="login-username" placeholder="用户名">
+			</div>
+			<div>
+				<input type="password" name="password" class="login-psd" placeholder="密码">
+			</div>
+			
+			<div class="sub">
+				<a href="#" class="main-btn btn" id="login-btn">登录</a>
+			</div>
+		</div>
+	</div>
+	<div class="login-box main-sign hide-box">
+		<div class="persent">
+			<span id="reg-identy">
+				<input type="radio" name="signIdentity" value="1"><span>老师</span>
+				<input type="radio" name="signIdentity" value="2"><span>学生</span>
+			</span>
+			<span id="reg-gender">
+				<input type="radio" name="gender" value="男"><span>男</span>
+				<input type="radio" name="gender" value="女"><span>女</span>
+			</span>
+		</div>
+		<div>
+			<input type="text" name="username" class="reg-username" placeholder="用户名">
+		</div>
+		<div>
+			<input type="text" name="realname" class="reg-realname" placeholder="真实姓名">
+		</div>
+		<div>
+			<input type="password" name="password" class="reg-psd" placeholder="密码">
+		</div>
+		<div>
+			<input type="password" name="sure-password" placeholder="确认密码">
+		</div>
+		<div class="attention">
+			<input type="text" name="introduce" class="reg-intro" placeholder="个人简介">
+		</div>
+		<div class="sub">
+			<a href="#" class="sub-btn btn" id="change-login">去登录</a>
+			<a href="#" class="main-btn btn" id="sign-btn">确认注册</a>
+		</div>
+	</div>
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+</div>
+
+<script src="../js/lib/r.js" data-main="../js/page/login"></script>	
+</body>
+</html>

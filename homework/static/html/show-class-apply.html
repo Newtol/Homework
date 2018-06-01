@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通知处理</title>
+	<link rel="stylesheet" href="../css/page/show-class-apply.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">同学，你好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="fenxi.html">数据分析</a></li>
+			<li><a href="set-information.html?flag=2">个人设置</a></li>
+			<li><a href="announcement.html?flag=2">通知</a></li>
+			<li><a href="stu-index.html">首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	<div class="apply-wraper"></div>	
+	<script type="text/x-handlebars-template" id="apply-list-tpl">
+		<ul class="apply-list">
+			<h2>老师的申请：</h2>
+			{{#each this.teach}}
+				<li>
+					<p>申请人：<span class="person-app">{{realname}}</span></p>
+					<p>课程：<span class="course-app">{{course}}</span></p>
+					<p>申请id：<span class="id-app">{{apid}}</span></p>					
+					{{#if done}}
+						<p>状态：已处理</p>
+					{{else}}
+						
+						<p>状态：未处理
+							<span class="click-handle tea-agree-handle">点击同意申请</span>
+							<span class="click-handle tea-refuse-handle">点击拒绝申请</span>
+						</p>
+					{{/if}}					
+					<p>说明：<span class="addtion-app">{{addtion}}</span></p>
+				</li>
+			{{/each}}
+		</ul>
+		<ul class="apply-list">
+			<h2>同学的申请：</h2>
+			{{#each this.stu}}
+				<li>
+					<p>申请人：{{realname}}</p>
+					<p>个人简介：{{selfintro}}</p>
+					<p>申请id：<span class="id-app">{{apid}}</span></p>		
+					{{#if done}}
+						<p>状态：已处理</p>
+					{{else}}
+						<p>状态：未处理
+							<span class="click-handle stu-agree-handle">点击同意申请</span>
+							<span class="click-handle stu-refuse-handle">点击拒绝申请</span>
+						</p>
+					{{/if}}
+				</li>
+			{{/each}}
+		</ul>
+	</script>
+</div>
+
+<script src="../js/lib/r.js" data-main="../js/page/show_class_apply"></script>	
+</body>
+</html>

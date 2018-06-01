@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/modules/top.scss */
+.top {
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  background: url("../../img/top_bg.png");
+  background-size: 100% 100%;
+  color: #fff;
+}
+/* line 10, ../../sass/modules/top.scss */
+.top .logo {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+/* line 14, ../../sass/modules/top.scss */
+.top .logo h2 {
+  margin-left: 5%;
+  padding-left: 70px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+/* line 21, ../../sass/modules/top.scss */
+.top .top-nav {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+/* line 25, ../../sass/modules/top.scss */
+.top .top-nav ul {
+  height: 100%;
+  text-align: right;
+}
+/* line 29, ../../sass/modules/top.scss */
+.top .top-nav li {
+  display: inline-block;
+  padding-top: 30px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+/* line 35, ../../sass/modules/top.scss */
+.top .top-nav li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 38, ../../sass/modules/top.scss */
+.top .top-nav li a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* line 5, ../../sass/page/teacher-course.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 10, ../../sass/page/teacher-course.scss */
+body {
+  font-family: "微软雅黑";
+  background: #f2f2f2;
+  font-size: 62.5%;
+}
+
+/* line 16, ../../sass/page/teacher-course.scss */
+.task-wraper {
+  overflow: hidden;
+  padding-left: 2.5%;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+/* line 24, ../../sass/page/teacher-course.scss */
+.logo span {
+  font-size: 1rem;
+}
+
+/* line 29, ../../sass/page/teacher-course.scss */
+.content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* 学生首页 */
+}
+/* line 33, ../../sass/page/teacher-course.scss */
+.content .search-box {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 999;
+  overflow: hidden;
+}
+/* line 39, ../../sass/page/teacher-course.scss */
+.content .search-box .teacher-info {
+  display: none;
+  float: right;
+  margin-right: 10px;
+  padding: 8px;
+  background: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 46, ../../sass/page/teacher-course.scss */
+.content .search-box .teacher-info p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+/* line 52, ../../sass/page/teacher-course.scss */
+.content .search-box .search-wraper, .content .search-box .create-wraper, .content .search-box .myclass-wraper {
+  float: right;
+  padding: 3px;
+  background: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 57, ../../sass/page/teacher-course.scss */
+.content .search-box .search-wraper input, .content .search-box .create-wraper input, .content .search-box .myclass-wraper input {
+  width: 200px;
+  outline: none;
+}
+/* line 61, ../../sass/page/teacher-course.scss */
+.content .search-box .search-wraper input, .content .search-box .search-wraper button, .content .search-box .create-wraper input, .content .search-box .create-wraper button, .content .search-box .myclass-wraper input, .content .search-box .myclass-wraper button {
+  border: 0;
+  vertical-align: middle;
+}
+/* line 65, ../../sass/page/teacher-course.scss */
+.content .search-box .search-wraper button, .content .search-box .create-wraper button, .content .search-box .myclass-wraper button {
+  height: 44px;
+  width: 44px;
+  background: url("../../img/icon_search.png") no-repeat;
+}
+/* line 72, ../../sass/page/teacher-course.scss */
+.content .search-box .class-detail, .content .search-box .create-class {
+  display: none;
+  margin-top: 20px;
+}
+/* line 75, ../../sass/page/teacher-course.scss */
+.content .search-box .class-detail p, .content .search-box .create-class p {
+  padding: 10px 5px;
+  font-size: 1.1rem;
+}
+/* line 78, ../../sass/page/teacher-course.scss */
+.content .search-box .class-detail p button, .content .search-box .create-class p button {
+  margin-left: 10%;
+  width: 80%;
+  height: 40px;
+  color: #fff;
+  font-size: 1rem;
+  background: #59BDCE;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 89, ../../sass/page/teacher-course.scss */
+.content .search-box .create-wraper, .content .search-box .myclass-wraper {
+  margin-right: 20px;
+}
+/* line 91, ../../sass/page/teacher-course.scss */
+.content .search-box .create-wraper button, .content .search-box .myclass-wraper button {
+  width: 100px;
+  color: #fff;
+  font-size: 1rem;
+  background: #59BDCE;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+/* line 98, ../../sass/page/teacher-course.scss */
+.content .search-box .create-wraper button.long-width, .content .search-box .myclass-wraper button.long-width {
+  margin-left: 5%;
+  width: 90%;
+}
+/* line 104, ../../sass/page/teacher-course.scss */
+.content .search-box .create-wraper p input, .content .search-box .myclass-wraper p input {
+  height: 30px;
+  border: 1px solid #eee;
+}
+/* line 108, ../../sass/page/teacher-course.scss */
+.content .search-box .create-wraper p textarea, .content .search-box .myclass-wraper p textarea {
+  margin-top: 15px;
+  margin-left: 5%;
+  height: 80px;
+  width: 90%;
+}
+/* line 117, ../../sass/page/teacher-course.scss */
+.content .search-box .myclass-wraper button {
+  width: 300px;
+}
+/* line 123, ../../sass/page/teacher-course.scss */
+.content .task-wraper {
+  font-size: 1.5rem;
+}
+/* line 126, ../../sass/page/teacher-course.scss */
+.content .course-block, .content .work-block {
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 25px;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+/* line 135, ../../sass/page/teacher-course.scss */
+.content .course-block h2, .content .work-block h2 {
+  font-size: 1.2rem;
+}
+/* line 138, ../../sass/page/teacher-course.scss */
+.content .course-block p, .content .work-block p {
+  margin-top: 5px;
+  padding: 5px 10px 5px 5px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+/* line 148, ../../sass/page/teacher-course.scss */
+.content .show-situation {
+  position: absolute;
+  z-index: 9999;
+  overflow: hidden;
+  width: 30%;
+  right: 0;
+}
+/* line 155, ../../sass/page/teacher-course.scss */
+.content .show-situation.add-bg {
+  top: 0;
+  background: white;
+}
+/* line 159, ../../sass/page/teacher-course.scss */
+.content .show-situation span {
+  float: right;
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+  background: #16A05D;
+  cursor: pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 170, ../../sass/page/teacher-course.scss */
+.content .show-situation span.hide {
+  margin: 10px;
+  font-size: 0.8px;
+}
+/* line 175, ../../sass/page/teacher-course.scss */
+.content .show-situation #close-situation {
+  display: none;
+  float: left;
+  padding: 3px;
+  font-size: 0.6rem;
+  text-align: center;
+  vertical-align: center;
+  color: #fff;
+}
+/* line 184, ../../sass/page/teacher-course.scss */
+.content .show-situation .stu-situation {
+  float: left;
+  clear: both;
+  display: none;
+}
+/* line 188, ../../sass/page/teacher-course.scss */
+.content .show-situation .stu-situation ul li {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+/* line 194, ../../sass/page/teacher-course.scss */
+.content .stu-cover {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}

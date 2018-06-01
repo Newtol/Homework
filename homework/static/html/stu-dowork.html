@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生-做作业</title>
+	<link rel="stylesheet" href="../css/page/stu-dowork.css">
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">同学，您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="fenxi.html">数据分析</a></li>
+			<li><a href="set-information.html?flag=2">个人设置</a></li>
+			<li><a href="announcement.html?flag=2">通知</a></li>
+			<li><a href="stu-index.html">首页</a></li>	
+		</ul>
+	</div>
+</div>
+<div class="content">		
+	<div class="detail-wraper"></div>
+</div>
+<script type="text/x-handlebars-template" id="work-detail">
+	<h3>作业详情</h3>
+	<p>{{addtion}}</p>
+	<p>作业题目：
+		<a href="http://115.159.113.116/index.php/Homework/downLoad/{{asinattachment}}/1" download="{{asinattachment}}">作业题目下载</a>
+	</p>
+	{{#if hoattachment}}
+		<p>作业下载：
+			<a href="http://115.159.113.116/index.php/Homework/downLoad/{{hoattachment}}/2" download="{{hoattachment}}">您已上传的作业</a>
+		</p>
+	{{/if}}
+	<p>截止日期：{{deadline}}</p>
+	<form enctype="multipart/form-data" id="work-form">
+		<p style="display:none;">课程号：<input type="text" name="asid" id="course-id"></p>
+		<p>作业上传：<input type="file" name="file"></p>
+	</form>
+	<p>
+		<button class="sub-work">提交作业</button>
+		<button class="edit-work">修改作业</button>
+	</p>
+</script>
+<script src="../js/lib/r.js" data-main="../js/page/stu-dowork"></script>	
+</body>
+</html>

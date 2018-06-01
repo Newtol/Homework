@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生-首页</title>
+	<link rel="stylesheet" href="../css/page/teacher-course.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+		#top {
+			height: 15%;
+		}
+		.content {
+			width: 100%;
+			height: 85%;
+			background: url(../img/star.jpeg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.join-high {
+			position: relative;
+			height: 100%;
+			width: 100%;
+		}
+		#fenxi-title {
+			text-align: center;
+			padding-top: 30px;
+			font-size: 40px;
+			color: #fff;
+		}
+		.join-high p {
+			position: absolute;
+			text-align: center;
+			color: #fff;
+			font-size: 16px;
+		}
+		.jointime {
+			top: 30%;
+			left: 20%;
+		}
+		.whichhigh {
+			top: 18%;
+			left: 20%;
+		}
+		.absent {
+			top: 35%;
+			left: 50%;
+		}
+		.did {
+			top: 50%;
+			left: 35%;
+		}
+		.bestcourse {
+			top: 65%;
+			left: 45%;
+		}
+		.worsecourse {
+			top: 50%;
+			left: 65%;
+		}
+		.point {
+			display: block;
+			margin: 5px auto;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+<div class="top" id="top">
+	<div class="logo">		
+		<h2><span class="person">同学，你好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>			
+			<li><a href="#" class="back">返回</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">	
+	<!-- <img src="../img/20160617010810949.jpg" width="100%" height="100%" alt=""> -->
+	<div class="join-high">
+		<h2 id="fenxi-title">教学数据    无限未来</h2>
+	</div>
+
+	<script id="join-high" type="text/x-handlebars-template">
+		<p class="jointime">您在{{jointime}}加入了这个系统<span class="point"></span></p>
+	</script>
+	<script id="year-result" type="text/x-handlebars-template">
+		<p class="absent">你有{{absent}}次作业没有交<span class="point"></span></p>
+		<p class="did">你交了{{did}}次作业<span class="point"></span></p>
+		<p class="bestcourse">你本年平时分最高的课程是{{bestcourse}}<span class="point"></span></p>
+		<p class="worsecourse">你本年平时分最低的课程是{{worsecourse}}<span class="point"></span></p>
+	</script>
+	
+</div>
+<script src='../js/lib/r.js' data-main='../js/page/fenxi'></script>	
+</body>
+</html>

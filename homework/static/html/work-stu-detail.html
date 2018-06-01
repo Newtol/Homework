@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教师-学生作业详情</title>
+	<link rel="stylesheet" href="../css/page/work-stu-detail.css">
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">老师，您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="set-information.html?flag=1">个人设置</a></li>
+			<li><a href="announcement.html?flag=1">通知</a></li>
+			<li><a href="teacher-course.html">首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	
+</div>
+<script type="text/x-handlebars-template" id="correcting">
+	<h1>学生：{{name}}&nbsp;&nbsp;&nbsp;&nbsp;
+		{{#if attach}}
+		<a href="http://115.159.113.116/index.php/Homework/downLoad/{{attach}}/2" download="">作业下载</a>
+		{{/if}}
+	</h1>	
+	<ul>
+		<li>请您批阅：</li>
+		<li>等&nbsp;&nbsp;&nbsp;级：
+			<select name="" id="grade">
+				<option value="C">C</option>
+				<option value="C+">C+</option>
+				<option value="B-">B-</option>
+				<option value="B+">B+</option>
+				<option value="B">B</option>
+				<option value="A-">A-</option>
+				<option value="A">A</option>
+				<option value="A+">A+</option>
+			</select>
+		</li>		
+		<li>说&nbsp;&nbsp;&nbsp;明：</br></br><textarea rows="10" class="addtion">{{addtion}}</textarea></li>		
+		<p><button id="correcting-btn">提交批阅结果</button></p>
+	</ul>
+</script>
+<script src="../js/lib/r.js" data-main="../js/page/teacher-correcting"></script>
+</body>
+</html>

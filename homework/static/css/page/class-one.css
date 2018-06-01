@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* line 1, ../../sass/modules/top.scss */
+.top {
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  background: url("../../img/top_bg.png");
+  background-size: 100% 100%;
+  color: #fff;
+}
+/* line 10, ../../sass/modules/top.scss */
+.top .logo {
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+/* line 14, ../../sass/modules/top.scss */
+.top .logo h2 {
+  margin-left: 5%;
+  padding-left: 70px;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+/* line 21, ../../sass/modules/top.scss */
+.top .top-nav {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+/* line 25, ../../sass/modules/top.scss */
+.top .top-nav ul {
+  height: 100%;
+  text-align: right;
+}
+/* line 29, ../../sass/modules/top.scss */
+.top .top-nav li {
+  display: inline-block;
+  padding-top: 30px;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+/* line 35, ../../sass/modules/top.scss */
+.top .top-nav li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 38, ../../sass/modules/top.scss */
+.top .top-nav li a {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* line 6, ../../sass/page/class-one.scss */
+html, body, ul, li, p, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../../sass/page/class-one.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 13, ../../sass/page/class-one.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 16, ../../sass/page/class-one.scss */
+body {
+  font-family: "微软雅黑";
+  font-size: 62.5%;
+}
+
+/* line 22, ../../sass/page/class-one.scss */
+.logo span {
+  font-size: 1rem;
+}
+
+/* line 27, ../../sass/page/class-one.scss */
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 30, ../../sass/page/class-one.scss */
+.content .stu-list {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  /* 发布作业 */
+}
+/* line 34, ../../sass/page/class-one.scss */
+.content .stu-list h2 {
+  padding: 20px 0;
+}
+/* line 36, ../../sass/page/class-one.scss */
+.content .stu-list h2 a {
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding: 10px 15px;
+  font-size: 0.5rem;
+  background: #FF4600;
+  border-radius: 4px;
+  color: #fff;
+  -moz-box-shadow: 0, 0, 10px, #fff;
+  -webkit-box-shadow: 0, 0, 10px, #fff;
+  box-shadow: 0, 0, 10px, #fff;
+}
+/* line 47, ../../sass/page/class-one.scss */
+.content .stu-list ul {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+/* line 52, ../../sass/page/class-one.scss */
+.content .stu-list ul a {
+  color: #fff;
+}
+/* line 55, ../../sass/page/class-one.scss */
+.content .stu-list ul li {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
+  width: 90%;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* line 64, ../../sass/page/class-one.scss */
+.content .stu-list ul li:hover {
+  -moz-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+/* line 67, ../../sass/page/class-one.scss */
+.content .stu-list ul li span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 15%;
+  font-size: 1.1rem;
+}
+/* line 71, ../../sass/page/class-one.scss */
+.content .stu-list ul li span.stu-detail {
+  width: 50%;
+}
+/* line 76, ../../sass/page/class-one.scss */
+.content .stu-list ul .work-stu-one {
+  display: inline-block;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 82, ../../sass/page/class-one.scss */
+.content .stu-list ul .work-stu-one:hover {
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+/* line 85, ../../sass/page/class-one.scss */
+.content .stu-list ul .work-stu-one a {
+  line-height: 60px;
+}
+/* line 88, ../../sass/page/class-one.scss */
+.content .stu-list ul .work-stu-one span {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 92, ../../sass/page/class-one.scss */
+.content .stu-list ul .work-stu-one span i {
+  margin-left: 3px;
+  font-size: 0.6rem;
+}
+/* line 103, ../../sass/page/class-one.scss */
+.content .stu-list .hide-declare {
+  left: -200%;
+}
+/* line 106, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box {
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  right: 30%;
+  top: 3%;
+  width: 40%;
+  margin: 0 auto;
+  background: #de5145;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+/* line 118, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+/* line 122, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box h2 span {
+  float: right;
+  margin-right: 20px;
+  display: block;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+/* line 130, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box div {
+  text-align: right;
+  padding: 10px;
+  margin-right: 20%;
+}
+/* line 135, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box label {
+  padding: 5px;
+  color: #fff;
+}
+/* line 139, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box input {
+  width: 75%;
+  height: 30px;
+  background: #fff;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 148, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box .sub-work {
+  color: #fff;
+  font-size: 1.1rem;
+  background: #ffce44;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 155, ../../sass/page/class-one.scss */
+.content .stu-list .declare-box .enclosure input {
+  width: 65%;
+  padding-right: 22px;
+  background: url("../../img/enclosure.png") #fff no-repeat right 50%;
+}
+/* line 163, ../../sass/page/class-one.scss */
+.content .color1 {
+  background: rgba(222, 83, 71, 0.6);
+}
+/* line 166, ../../sass/page/class-one.scss */
+.content .color2 {
+  background: rgba(165, 199, 236, 0.6);
+}
+/* line 169, ../../sass/page/class-one.scss */
+.content .color3 {
+  background: rgba(255, 206, 68, 0.6);
+}
+/* line 172, ../../sass/page/class-one.scss */
+.content .color4 {
+  background: rgba(183, 158, 223, 0.6);
+}
+/* line 176, ../../sass/page/class-one.scss */
+.content .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}

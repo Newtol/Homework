@@ -1,0 +1,54 @@
+老师页面：
+
+班级列表：列表有班级号， 课程名，      班级名，     创建者
+	  jxclassid,     coursename,   classname,   owner
+
+（这个教学班级号是用于唯一识别某个教学班的，不用展示给用户。
+只是在点击某个班的时候，前端要传给后台，用于后台查找某个班的信息）
+
+进入班级：个人id ，   姓名，  性别、  是否管理员、  个人介绍
+          studentid,  name,   gender, isadmin,      selfintro
+（这个studentid和上面一样，只是为了传给后台使用的。）
+
+
+
+
+发布作业：
+
+作业id   		asid
+百分比   		percentage
+上传之后的文件名	attachement
+截止日期		deadline
+发布日期		pubtime
+说明			addtion
+班级号			jid
+
+
+接口：查看老师布置的未过期的作业  传入参数：无     
+	返回：
+	asid（作业号）,
+	percentage（这次作业百分比）,
+	attachment（附件地址）,
+	deadline（过期时间）,
+	course（课程名）,
+	name （班级名）
+
+接口：查看某个班某次作业的详细信息 传入参数：asid( 作业号) 
+	返回：
+	finish（已完成）= int,
+	nofinish（未完成），
+	nojudge（已完成但未修改）
+
+接口：查看某人某次提交的作业情况 传入参数：asid（作业号），sid(学生号)  
+	返回:
+	name(学生姓名),
+	attachment(附件地址)
+
+接口：给某人某次作业打成绩，写批语 
+	传入参数:grade（成绩）、addtion（说明）、asid（作业号）、sid（学生号）、percentage
+	返回：成功200  错误201
+
+
+
+
+

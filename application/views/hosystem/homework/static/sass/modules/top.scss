@@ -1,0 +1,37 @@
+.top {
+	overflow: hidden;
+	height: 120px;
+	width: 100%;
+	//background: #474747;
+	background: url("../../img/b.jpg") no-repeat;
+	background-size: 100% 100%;
+
+	color: #fff;
+	.logo {
+		float: left;
+		height: 100%;
+		width: 40%;
+		h2 {
+			margin-left: 5%;
+			padding-left: 70px;
+			margin-top: 10%;
+			font-size: 1.5rem;
+			background: url("../../img/logo.png") left 50% no-repeat;
+		}
+	}
+	.top-nav {
+		float: right;
+		margin-right: 2.5%;
+		width: 50%;
+		li {
+			float: right;
+			margin-top: 50px;
+			margin-right: 5%;
+			a {
+				font-size: 1.1rem;
+				color: #fff;
+			}
+		}	
+		
+	}
+}

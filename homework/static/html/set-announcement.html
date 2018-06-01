@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通知</title>
+	<link rel="stylesheet" href="../css/page/announcement.css">
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>			
+			<li><a href="fenxi.html">数据分析</a></li>
+			<li><a href="set-information.html?flag=1">个人设置</a></li>
+			<li><a href="announcement.html">通知</a></li>
+			<li><a href="teacher-course.html">首页</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	<div class="tab-wraper">
+		<div class="menuBox">
+			<ul class="menu">
+				<li class="selected" style="width:100%">发布公告</li>
+			</ul>
+		</div>
+		<div class="conBox">
+			<div>
+				<textarea rows="10" class="announce-content"></textarea>
+				<button id="send-announce">发布</button>
+			</div>
+			<!-- <div class="hide">
+				<ul class="announce-list">
+					
+				</ul>
+			</div>
+			<div class="hide" id="announce-detail">
+				<p></p>
+			</div> -->
+		</div>
+	</div>
+	<!-- <script type="text/x-handlebars-template" id="announce-tpl">
+		{{#each this}}
+			<li><a href="#">发布者：{{postor}}</a><span class="mId">{{mid}}</span></li>
+		{{/each}}
+	</script> -->
+	
+	
+</div>
+
+<script src='../js/lib/r.js' data-main='../js/page/set_announcement'></script>
+</body>
+</html>

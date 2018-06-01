@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生-班级详情</title>
+	<link rel="stylesheet" href="../css/page/class-one.css">
+	<link rel="stylesheet" type="text/css" href="../css/lib/normalize.css" />
+
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="../css/lib/set1.css" />
+</head>
+<body>
+<div class="top">
+	<div class="logo">		
+		<h2><span class="person">同学，您好！</span></h2>
+	</div>
+	<div class="top-nav">
+		<ul>
+			<li><a href="set-information.html?flag=2">个人设置</a></li>
+			<li><a href="stu-index.html">课堂</a></li>		
+			<li><a href="announcement.html">通知</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content">
+	
+	<div class="stu-list">
+		<h2>班级代号：0311402</h2>		
+		
+		
+		<!-- 学生信息 -->
+		<ul class="stu-info-list">
+			
+			
+		</ul>
+		<script type="text/x-handlebars-template" id="stu-list">
+			{{#each this}}
+				<li>
+					<a href="stu-stu-detail.html?courseId={{jid}}&stuId={{sid}}">
+
+						<span>{{name}}</span><span>{{gender}}</span>						
+						<span>成员</span> 
+						<span class="stu-detail">{{selfintro}}</span>
+					</a>
+				</li>
+			{{/each}}
+		</script>
+	
+	</div>
+
+	<div class="cover"></div>
+	
+</div>
+
+
+<script src='../js/lib/r.js' data-main='../js/page/class_one'></script>	
+</body>
+</html>

@@ -1,0 +1,45 @@
+.top {
+	position: relative;
+	z-index: 1000;
+	overflow: hidden;
+	height: 80px;
+	width: 100%;
+	background: url("../../img/top_bg.png");	
+	background-size: 100% 100%;
+	color: #fff;
+	.logo {
+		float: left;
+		height: 100%;
+		width: 40%;
+		h2 {
+			margin-left: 5%;
+			padding-left: 70px;
+			margin-top: 30px;
+			font-size: 1.5rem;
+		}
+	}
+	.top-nav {
+		float: right;
+		width: 50%;
+		height: 100%;
+		ul {
+			height: 100%;
+			text-align: right;
+		}
+		li {
+			display: inline-block;
+			padding-top: 30px;
+			width: 20%;
+			height: 100%;
+			text-align: center;
+			&:hover {
+				background: rgba(255, 255, 255, 0.5);
+			}
+			a {
+				font-size: 1.1rem;
+				color: #fff;
+			}
+		}	
+		
+	}
+}

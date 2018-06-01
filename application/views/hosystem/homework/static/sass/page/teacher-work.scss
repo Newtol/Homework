@@ -1,0 +1,41 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "../modules/top";
+
+a {
+	text-decoration: none;
+}
+
+
+body {
+	font-family: "微软雅黑";	
+	background: #f2f2f2;
+	font-size: 62.5%;
+}
+.content {
+	width: 100%;
+	h1 {
+		padding-top: 20px;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	ul {
+		overflow: hidden;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 70%;
+		border: 1px solid #9ABDF4;
+		background: #fff;
+		@include border-radius(4px);
+		li {
+			margin: 0 auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 80%;
+			padding: 15px 10px;
+			background: #fff;
+			font-size: 1.3rem;
+			@include border-radius(4px);
+		}
+	}
+}
